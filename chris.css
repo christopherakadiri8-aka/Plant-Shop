@@ -977,3 +977,233 @@ line-height: 29.7143px;
 color: rgb(255, 255, 255);
     margin: 0;
 }
+
+/* ...existing code... */
+
+/* ========== RESPONSIVE DESIGN ========== */
+
+/* Tablets (max-width: 1024px) */
+@media (max-width: 1024px) {
+  .headercontainer {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 1rem;
+  }
+  .navlinks {
+    gap: 20px;
+    padding-left: 0;
+    margin-bottom: 20px;
+  }
+  .logoimg img {
+    width: 100px;
+    height: auto;
+    margin-bottom: 20px;
+  }
+  .sidebtns {
+    right: 10px;
+    top: 60%;
+    width: 110px;
+  }
+  .Products1,
+  .product-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+  }
+  .info1 img {
+    width: 350px;
+    height: 250px;
+  }
+  .infoText {
+    margin-left: 20px;
+    gap: 30px;
+  }
+  .containerWe {
+    flex-direction: column;
+    gap: 20px;
+  }
+  .card {
+    height: 250px;
+  }
+  .clientCards {
+    grid-template-columns: 1fr;
+    gap: 30px;
+  }
+  .clientcard {
+    width: 90%;
+    margin: 0 auto;
+  }
+  .footer .map-container iframe {
+    width: 90vw;
+    height: 250px;
+  }
+  .footer-bottom {
+    flex-direction: column;
+    gap: 10px;
+    margin-left: 0;
+    max-width: 95vw;
+    margin-top: 50px;
+  }
+}
+
+/* Mobile (max-width: 768px) */
+@media (max-width: 768px) {
+  .backgroundimg {
+    height: auto;
+    min-height: 80vh;
+    padding-bottom: 2rem;
+  }
+  .headercontainer {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 1rem 0.5rem;
+  }
+  .navlinks {
+    flex-direction: column;
+    gap: 10px;
+    padding-left: 0;
+    margin-bottom: 10px;
+  }
+  .sidebtns {
+    position: static;
+    flex-direction: row;
+    gap: 10px;
+    margin: 10px 0;
+    transform: none;
+    width: 100%;
+    justify-content: center;
+  }
+  .sidebtn, .sidebtnn {
+    width: 100px;
+    height: 40px;
+    font-size: 14px;
+  }
+  .plantContent h1 {
+    font-size: 2.2rem;
+    line-height: 2.5rem;
+  }
+  .plantContent h2 {
+    font-size: 1.1rem;
+  }
+  .features {
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+    padding: 0 10px;
+  }
+  .Products1,
+  .product-grid {
+    grid-template-columns: 1fr;
+    gap: 15px;
+    padding: 0 10px;
+  }
+  .products img {
+    height: 180px;
+  }
+  .Featured-Products {
+    height: auto;
+    padding-top: 30px;
+  }
+  .ftpText h1 {
+    font-size: 2rem;
+    line-height: 2.5rem;
+  }
+  .info1 {
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    padding: 0 1rem;
+  }
+  .info1 img {
+    width: 90vw;
+    height: 180px;
+  }
+  .infoText {
+    margin-left: 0;
+    max-width: 95vw;
+    gap: 20px;
+  }
+  .containerWe {
+    flex-direction: column;
+    gap: 10px;
+    padding: 10px;
+  }
+  .card {
+    height: 180px;
+  }
+  .buyOnline {
+    min-height: 200px;
+    background-size: cover;
+    padding: 1rem 0;
+  }
+  .buyOnlinetxt h1 {
+    font-size: 1.5rem;
+    line-height: 2rem;
+  }
+  .clientCards {
+    grid-template-columns: 1fr;
+    gap: 15px;
+  }
+  .clientcard {
+    width: 98%;
+    margin: 0 auto;
+  }
+  .contact-container {
+    flex-direction: column;
+    gap: 10px;
+    max-width: 98vw;
+  }
+  .contact-box {
+    margin-right: 0;
+    margin-bottom: 15px;
+  }
+  .footer {
+    height: auto;
+    padding-bottom: 30px;
+  }
+  .footer .map-container iframe {
+    width: 98vw;
+    height: 180px;
+  }
+  .footer-bottom {
+    flex-direction: column;
+    gap: 8px;
+    margin-left: 0;
+    margin-top: 20px;
+    max-width: 98vw;
+    padding: 10px 0;
+  }
+}
+
+/* Extra Small Devices (max-width: 480px) */
+@media (max-width: 480px) {
+  .plantContent h1 {
+    font-size: 1.3rem;
+    line-height: 1.7rem;
+  }
+  .plantContent h2 {
+    font-size: 0.9rem;
+  }
+  .products img,
+  .info1 img {
+    height: 100px;
+  }
+  .feature {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 5px;
+    padding: 10px 0;
+  }
+  .infoText h1,
+  .ftpText h1,
+  .ClientSection h1,
+  .buyOnlinetxt h1 {
+    font-size: 1.1rem;
+    line-height: 1.5rem;
+  }
+  .clientcard p {
+    font-size: 1rem;
+    line-height: 1.3rem;
+  }
+  .footer .map-container iframe {
+    height: 100px;
+  }
+}
