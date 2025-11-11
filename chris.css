@@ -1064,40 +1064,59 @@ color: rgb(255, 255, 255);
     align-items: flex-start;
     padding: 1rem 0.5rem;
   }
+
+  
+
  #onebtn {
         display: block;
         position: absolute;
         right: 20px;
         top: 20px;
         z-index: 1000;
+        color: white;
     }
 
     .navlinks {
         display: none;
         width: 100%;
+      
         position: absolute;
         top: 60px;
         left: 0;
-        background: rgba(0, 0, 0, 0.9);
+        background: black;
         flex-direction: column;
-        padding: 20px;
-        gap: 10px;
+        padding: 10px;
+        gap: 5px;
     }
 
     .navlinks.open {
         display: flex;
+        z-index: 9999;
+    }
+
+    body.nav-open {
+        overflow: hidden;
     }
 
     .navlinks li {
         width: 100%;
-        text-align: center;
+        text-align: left;
+        padding: 15px 0;
     }
 
     .dropdown-content {
         position: static;
         width: 100%;
+        background: #f5f5f5;
+        padding: 10px 0;
     }
   
+    
+    .navlinks.open ~ .headerbtn,
+    .navlinks.open ~ .sidebtns {
+  display: none !important;
+}
+
   .sidebtns {
     position: static;
     flex-direction: row;
